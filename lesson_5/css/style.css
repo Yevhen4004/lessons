@@ -1,0 +1,170 @@
+/* Підключення шрифтів */
+@import url("fonts.css");
+
+
+
+
+/* Скидання стилів */
+
+@import url("reset.css");
+
+
+
+
+body{
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+}
+
+.title{
+	font-family: "Bluerays";
+	color: rgba(26, 5, 79, 0.904);
+	font-size: 70px;
+	letter-spacing: 20px;
+	text-align: center;
+	text-shadow: 5px 5px 2px red, 10px 10px 2px rgba(26, 5, 79, 0.904);
+}
+
+span{
+	color: rgba(112, 84, 89, 0.766);
+	font-size: 25px;
+	word-spacing: 10px;
+	font-style: oblique;
+	text-decoration: underline;
+	text-transform: capitalize;
+}
+
+.block-one p{
+	color: crimson;
+	font-size: 20px;
+	line-height: 1.76;
+}
+
+.picture{
+	text-align: center;
+}
+
+.sub-title-one{
+	font-family: "Gagalin";
+	font-size: 50px;
+	color: darkslategrey;
+	letter-spacing: 7px;
+}
+
+.block-two{
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+	color: #6B77E5;
+	word-spacing: 5px;
+	line-height: 1.85;
+}
+
+.block-three{
+	font-family: "Bluerays";
+	font-size: 20px;
+	color: chartreuse;
+	text-shadow: 3px 3px 2px black;
+	line-height: 1.75;
+	text-indent: 30px;
+}
+
+.sub-title-two{
+	font-family: "Gagalin";
+	font-size: 50px;
+	color: darkslategrey;
+	letter-spacing: 7px;
+	text-align: right;
+}
+
+.block-four{
+	color: rgba(220, 20, 60, 0.6);
+	line-height: 1.85;
+	letter-spacing: 7px;
+
+	
+}
+
+mark{
+	color: rgba(6, 100, 100, 0.9);
+	text-decoration: line-through;
+	font-size: 30px;
+	font-style: oblique;
+}
+
+
+
+
+
+
+/* Screen #1=============================================================== */
+
+.sub-title-three{
+	font-family: "Poppins", sans-serif;
+	color: #37393F;
+	text-transform: capitalize;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.27;
+}
+
+.text-one,
+.text-two{
+	color: #7D7D7D;
+	font-weight: 400;
+	line-height: 1.47;
+}
+
+.sub-title-four{
+	color: #6B77E5;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+}
+/* ===Screen #2============================================================= */
+
+.sub-title-fife{
+	color: #37393F;
+	font-family: "Poppins";
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: capitalize;
+	line-height: 1.27;
+}
+
+.text-three,
+.text-four,
+.text-five{
+	color: #7D7D7D;
+	font-weight: 400;
+	line-height: 1.47;
+}
+
+.list,
+.list-dig{
+	color: #7D7D7D;
+	font-weight: 500;
+	line-height: 1.46;
+}
+/* ========================================================== */
+
+
+.link{
+	font-family: "Aubange belgium";
+	font-size: 30px;
+	line-height: 1.8;
+	color: red;
+	text-shadow: -3px -3px 2px black;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
