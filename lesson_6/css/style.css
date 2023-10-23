@@ -1,0 +1,219 @@
+/* Підключення шрифтів */
+
+@import url("fonts.css");
+
+/* Скидання стилів */
+
+@import url("reset.css");
+/* ============================================================== */
+
+body{
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+}
+/* ================================================================ */
+
+.lesson,
+.footer{
+	font-family: "Poppins";
+	font-weight: 600;
+	font-size: 35px;
+	color: gray;
+	text-shadow: 5px 5px 5px burlywood;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+.consulting{
+	max-width: 692px;
+	/* max-width: 722px; */
+	/* padding: 50px 15px; */
+	/* можна зробити так, буде адаптивніше(7й урок) */
+	margin: 0 auto;
+}
+
+.people{
+	max-width: 100%;
+	margin-bottom: 37px;
+}
+
+.sub-title-one{
+	font-family: "Poppins", sans-serif;
+	color: #37393F;
+	text-transform: capitalize;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 12.5px;
+	/* 12,5px замість 3px розібрати!! */
+}
+
+.text-one{
+	color: #7D7D7D;
+	line-height: 1.46;
+	margin-bottom: 42px;
+}
+
+
+.sub-title-two{
+	color: #6B77E5;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 12px;
+}
+
+.text-two{
+	color: #7D7D7D;
+	line-height: 1.46;
+	margin-bottom: 40px;
+}
+/* ============================================================ */
+
+.two-block{
+	font-size: 0;
+	/* щоб текст нормально вліз справа від зображення, як на макеті */
+	margin-bottom: 48px;
+	/* вниз від кінця блоку відступаємо */
+}
+
+.cactus{
+	width: 331px;	
+	margin-right: 29px;
+}
+
+.right{
+	display: inline-block;
+	width: 332px;
+	/* перезаписали знов 18px */
+	font-size: 18px;
+}
+
+.sub-title-three{
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 15px;
+}
+
+.sub-title-green{
+	color: #40DDB6;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 23.5px;
+}
+
+.list{
+	color: #7D7D7D;	
+}
+
+.list li{
+	margin-bottom: 35px;
+}
+
+/* ================== ДРУГИЙ СКРІН================================ */
+
+.jewellery {
+	max-width: 1169px ;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+.left {
+	display: inline-block;
+	width: 563px;
+	/* margin-right: 38px; не то . не до кінця по макету */
+	font-size: 18px;
+}
+
+.sub-title-four {
+	color: #D06B00;
+	font-size: 28px;
+	padding-top: 21px;
+	margin-bottom: 13px;
+}
+
+.sub-title-fife {
+	color: #0E333D;
+	font-family: "DM Serif Text";
+	font-size: 59px;
+	line-height: 1.46;
+	margin-bottom: 25px;
+}
+
+.text-four {
+	color: #474747;
+	font-size: 20px;
+	line-height: 1.8;
+}
+
+.girl {
+	width: 273px;
+	margin-left: 38px;
+}
+
+.earrings {
+	width: 273px;
+	margin-left: 22px;
+}
+/* ======ПРАКТИКА=========================================================== */
+
+.block-one{
+	background-color: greenyellow;
+	line-height: 1.8;
+	padding: 20px 50px;
+	margin: 20px 10px;
+}
+
+.block-two{
+	background-color: brown;
+	color: aquamarine;
+	line-height: 1.28;
+	padding-left: 150px;
+	min-width: 450px;
+}
+
+.block-three{
+	background-color: cadetblue;
+	margin-top: -10px;
+	margin-bottom: 25px;
+}
+/* схлопування */
+.block-four{
+	background-color: crimson;
+	color: antiquewhite;
+	padding: 5px;
+	margin: 50px 15px;
+}
+
+.forest{
+	max-width: 100%;
+	/* таке значення робить картинку адаптивною */
+	margin-bottom: 25px;
+}
+
+.block-five{
+	background-color: #40DDB6;
+	width: 500px;
+}
+
+.block-six{
+	background-color: indianred;
+	padding: 15px;
+	margin-top: 15px;
+	max-height: 150px;
+	overflow: auto;
+}
+
+
+
+
+
+
+
+
