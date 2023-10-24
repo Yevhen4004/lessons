@@ -13,7 +13,7 @@ body{
 }
 /* ================================================================ */
 
-.lesson,
+.header,
 .footer{
 	font-family: "Poppins";
 	font-weight: 600;
@@ -30,6 +30,7 @@ body{
 	/* padding: 50px 15px; */
 	/* можна зробити так, буде адаптивніше(7й урок) */
 	margin: 0 auto;
+	margin-bottom: 48px;
 }
 
 .people{
@@ -74,8 +75,6 @@ body{
 .two-block{
 	font-size: 0;
 	/* щоб текст нормально вліз справа від зображення, як на макеті */
-	margin-bottom: 48px;
-	/* вниз від кінця блоку відступаємо */
 }
 
 .cactus{
@@ -129,12 +128,13 @@ body{
 	width: 563px;
 	/* margin-right: 38px; не то . не до кінця по макету */
 	font-size: 18px;
+	padding-top: 21px;
+
 }
 
 .sub-title-four {
 	color: #D06B00;
 	font-size: 28px;
-	padding-top: 21px;
 	margin-bottom: 13px;
 }
 
