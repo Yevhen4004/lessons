@@ -309,8 +309,10 @@ span{
 
 .one,
 .two{
+	width: 100%;
 	margin-left: -11px;
 	padding-top: 19px;
+	border-radius: 235px;
 }
 
 .outline-two {
