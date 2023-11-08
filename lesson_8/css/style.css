@@ -1,0 +1,474 @@
+@import url("fonts.css");
+
+/* Скидання стилів */
+
+@import url("reset.css");
+
+.header {
+	font-size: 25px;
+	font-family: "Poppins", sans-serif;
+	color: darkslateblue;
+	font-weight: 700;
+}
+
+.main {
+	 padding: 30px;
+	 font-family: "Inter", sans-serif;
+	 font-size: 18px;
+
+}
+
+.block {
+	padding: 20px;
+	background-color: coral;
+	line-height: 1.3;
+	margin-bottom: 10px;
+}
+
+.block-one {
+	padding: 20px;
+	background-image: url("../img/penguin.jpg");
+	background-repeat: repeat;
+	margin-bottom: 15px;
+}
+
+.block-two {
+	padding: 20px;
+	line-height: 1.4;
+	border-radius: 50px;
+	background-image: linear-gradient(29deg, rgba(9,228,126,1) 5%, rgba(17,42,207,1) 18%, rgba(209,13,109,0.9809173669467787) 33%, rgba(22,26,74,1) 49%, rgba(184,204,32,1) 66%, rgba(212,24,214,1) 81%, rgba(18,36,162,1) 97%);
+	margin-bottom: 15px;
+}
+
+.block-three {
+	padding: 20px;
+	background-image: url("../img/yoda.jpg");
+	background-color: darkseagreen;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 10px;
+
+}
+
+.block-four {
+	padding: 20px;
+	color: rgb(19, 194, 206);
+	line-height: 1.5;
+	border-radius: 45px;
+	background-image: url("../img/coffee.jpg");
+	background-repeat: repeat;
+	background-position: right bottom;
+	/* ==аттачмент починається з в'юпорта====== */
+	background-attachment: fixed;
+	margin-bottom: 20px;
+}
+
+.block-five {
+	padding: 20px;
+	line-height: 1.7;
+	background-image: url("../img/picture_one.jpg");
+	/* background-repeat: no-repeat; */
+	/* background-size: 50%; */
+	/* background-size: contain; */
+	background-position: center;
+	background-size: cover;
+	/*  ковер та центр чудово працюють разом!================== */
+	margin-bottom: 25px;
+}
+
+/* ============УНІВЕРСАЛЬНА ВВЛАСТИВІСТЬ BACKGROUND */
+.block-six {
+	padding: 20px;
+	line-height: 1.4;
+	/* background: grey url("../img/clock.jpg") no-repeat; */
+	background: grey url("../img/clock.jpg") 0 0 / 500px no-repeat fixed;
+	margin-bottom: 15px;
+}
+
+.block-seven {
+	padding: 20px;
+	line-height: 1.5;
+	background: darkslateblue linear-gradient(15deg, rgba(214,196,24,1) 25%, rgba(221,14,227,1) 54%, rgba(41,209,18,1) 77%) 235px 70px / 350px 150px no-repeat;
+	margin-bottom: 25px;
+}
+
+.block-eight{
+	padding: 20px;
+	line-height: 1.6;
+	background: url("../img/yoda.jpg") 20px 20px / 300px no-repeat,
+				url("../img/beer.jpg") center no-repeat fixed,
+				linear-gradient(7deg, rgba(80,223,17,1) 37%, rgba(59,18,209,1) 71%);
+				margin-bottom: 50px;
+}
+/* ============================================================================================ */
+/* ======================МАКЕТ 1============================================================== */
+
+
+.care {
+	padding: 30px 20px;
+	max-width: 713px;
+	margin: 0 auto;
+}
+
+.subtitle-care {
+	padding-left: 18px;
+	color: #37393F;
+	font-weight: 500;
+	background: url("../img/green_square.svg") no-repeat left center;
+	margin-bottom: 16px;
+}
+
+.title-care {
+	max-width: 414px;
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 20px;
+}
+
+.content-care {
+	margin-bottom: 20px;
+}
+
+.content-care p {
+	color: #7D7D7D;
+	line-height: 1.47;
+	margin-bottom: 15px;
+}
+
+.list-care {
+	margin-bottom: 43px;
+}
+
+.care-item {
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	background: url("../img/vector_galochka.png") 3px no-repeat;
+	line-height: 1.65;
+	padding-left: 35px;
+	margin-bottom: 23px;
+}
+
+.one-care,
+.two-care {
+	display: inline-block;
+	border: 1px solid #E3E3E3;
+	max-width: 296px;
+	margin-bottom: 37px;
+}
+.one-care {
+	padding: 31px;
+	margin-right: 21px;
+}
+.two-care {
+	padding: 31px 36px;
+}
+
+.experience {
+	background: url("../img/experience_icon.png") 0 0 no-repeat;
+	padding-left: 58px;
+}
+
+.awards {
+	background: url("../img/awards_icon.png") 0 0 no-repeat;
+	padding-left: 58px;
+}
+
+.subtitle-one-care,
+.subtitle-two-care {
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.5;
+	margin-bottom: 3px;
+}
+
+.experience p,
+.awards p {
+	color: #7D7D7D;
+	font-size: 16px;
+	line-height: 1.35;
+}
+
+.button-care {
+	display: inline-block;
+	padding: 21px 27px;
+	background: #6B77E5;
+	color: #fff;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-bottom: 25px;
+}
+/* ===========МАКЕТ ДВА========================================== */
+
+.clothing {
+	max-width: 1280px;
+	margin: 0 auto 100px auto;
+	padding: 0 18px;
+	background: url("../img/violet_icon.png") no-repeat;
+}
+
+.clothing-title {
+	color: #3C4242;
+	font-family: "Core Sans C", sans-serif;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: 0.56px;
+	margin-bottom: 30px;
+}
+
+.clothing-subtitle {
+	color: #807D7E;
+	font-family: "Core Sans C", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.7;
+	letter-spacing: 0.4px;
+	margin-bottom: 25px;
+}
+
+.clothing-text-one,
+.clothing-text-two {
+	color: #807D7E;
+	font-family: "Causten", sans-serif;
+	font-size: 20px;
+	line-height: 1.7;
+	letter-spacing: 0.4px;
+}
+
+.clothing-text-one{
+	margin-bottom: 25px;
+}
+
+.clothing-text-one p,
+.clothing-text-two p{
+	margin-bottom: 20px;
+}
+
+.clothing-text-one span,
+.clothing-text-two span{
+	color: #807D7E;
+	font-family: "Causten", sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.7;
+	letter-spacing: 0.4px;
+}
+/* ================МАКЕТ ТРИ========================================================== */
+
+.project {
+	margin: 0 auto 100px auto;
+	padding: 0 15px;
+	max-width: 1280px;
+}
+
+.project-content {
+	max-width: 852px;
+	text-align: center;
+	margin: 0 auto 47px auto;
+}
+
+.title-header {
+	display: inline-block;
+	color: #37393F;
+	font-weight: 500;
+	background: url("../img/green_square.svg") left center no-repeat;
+	padding-left: 18px;
+	margin-bottom: 14px;
+}
+
+.title-big {
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 14px;
+}
+
+.project-info {
+	color: #7D7D7D;
+	font-weight: 400;
+	line-height: 1.46;
+}
+/* ========================================= */
+
+/* =========================================== */
+.project-card-one {
+	display: inline-block;
+	font-size: 0;
+	min-width: 384px;
+	min-height: 552px;
+	margin-bottom: 58px;
+}
+.project-card-pic-one {
+	background: url("../img/pic_1.png") no-repeat center / cover;
+	margin: 0 34px 24px 0;
+	width: 384px;
+	height: 500px;
+}
+.project-card-title {
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 10px;
+}
+.project-card-calendar {
+	background: url("../img/calendar_icon.png") no-repeat 0 0 / 22px;
+	padding-left: 27px;
+}
+.project-card-calendar p {
+	color: #7D7D7D;
+	font-size: 14px;
+	line-height: 1.46;
+}
+/* ========================================= */
+.project-card-two {
+	display: inline-block;
+	font-size: 0;
+	min-width: 384px;
+	min-height: 552px;
+	margin-bottom: 58px;
+}
+.project-card-pic-two {
+	background: url("../img/pic_2.png") no-repeat center / cover;
+	margin: 0 34px 24px 0;
+	width: 384px;
+	height: 500px;
+}
+/* ======================================== */
+.project-card-three {
+	display: inline-block;
+	font-size: 0;
+	min-width: 384px;
+	min-height: 552px;
+	margin-bottom: 58px;
+}
+.project-card-pic-three {
+	background: url("../img/pic_3.png") no-repeat center / cover;
+	margin: 0 0 24px 0;
+	width: 384px;
+	height: 500px;
+}
+/* ==================================== */
+.project-card-four {
+	display: inline-block;
+	font-size: 0;
+	min-width: 384px;
+	min-height: 552px;
+	margin-bottom: 58px;
+}
+.project-card-pic-four {
+	background: url("../img/pic_4.png") no-repeat center / cover;
+	margin: 0 34px 24px 0;
+	width: 384px;
+	height: 500px;
+}
+/* ===================================== */
+.project-card-five {
+	display: inline-block;
+	font-size: 0;
+	min-width: 384px;
+	min-height: 552px;
+	margin-bottom: 58px;
+}
+.project-card-pic-five {
+	background: url("../img/pic_5.png") no-repeat center / cover;
+	margin: 0 34px 24px 0;
+	width: 384px;
+	height: 500px;
+}
+/* ============================================ */
+.project-card-six {
+	display: inline-block;
+	font-size: 0;
+	min-width: 384px;
+	min-height: 552px;
+	margin-bottom: 58px;
+}
+.project-card-pic-six {
+	background: url("../img/pic_6.png") no-repeat center / cover;
+	margin: 0 0 24px 0;
+	width: 384px;
+	height: 500px
+}
+/* ====================МАКЕТ ЧОТИРИ============================================================ */
+
+.fashion {
+	max-width: 1270px;
+	padding: 0 15px;
+	margin: 0 auto 50px auto;
+	font-size: 0;
+}
+
+.left-block {
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 8px 0 0 8px;
+	background: url("../img/pic_left.png") no-repeat center / cover;
+	width: 614px;
+	height: 640px;
+	padding: 183px 74px 174px;
+}
+
+.fashion-title {
+	color: #FFF;
+	font-family: "Core Sans C", sans-serif;
+	font-size: 34px;
+	font-weight: 800;
+	line-height: 1.47;
+	letter-spacing: 0.208px;
+	margin-bottom: 30px;
+}
+
+.left-block p {
+	color: #FFF;
+	font-family: "Causten", sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin-bottom: 50px;
+}
+
+.fashion-button {
+	display: block;
+	width: 168px;
+	height: 46px;
+	color: #3C4242;
+	text-align: center;
+	font-family: "Causten", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 8px;
+	background: #FFF;
+	line-height: 1.2;
+	padding: 12px 44px;
+}
+
+.right-block {
+	display: inline-block;
+	width: 614px;
+	height: 640px;
+	background: url("../img/pic_right.png") no-repeat center / cover;
+	border-radius: 0 8px 8px 0;
+}
+
+.footer {
+	font-size: 30px;
+	font-family: "Causten", sans-serif;
+	font-weight: 600;
+	color: darkslategray;
+}
+
+
+
+
+
