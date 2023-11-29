@@ -1,0 +1,710 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+.practice {
+	font-family: "Inter", sans-serif;
+	padding: 30px;
+}
+.empty {
+	margin-bottom: 15px;
+}
+.empty:hover {
+	color: lightseagreen;
+	font-style: italic;
+	font-size: 20px;
+	letter-spacing: 3px;	
+}
+.link-one {
+	font-size: 30px;
+}
+.link-one:hover {
+	font-size: 45px;
+	color: burlywood;
+}
+
+/* коли треба звернутися через батьківський елемент */
+.coffee {
+	background: url(../img/coffee.jpg) no-repeat;
+	width: 350px;
+	height: 150px;
+	visibility: hidden;
+}
+.coffee-main:hover .coffee {
+	visibility: visible;
+}
+.link-two {
+	font-size: 25px;
+	margin-bottom: 25px;
+}
+.link-two:active {
+	font-size: 35px;
+	color: chartreuse;
+	font-style: italic;
+}
+.wiki {
+	font-size: 25px;
+	margin-bottom: 25px;
+}
+
+.vis:visited {
+	color: rgb(255, 47, 182);
+}
+
+.gradient {
+	padding: 15px;
+	background-color: rgb(95, 160, 119);
+	font-size: 25px;
+	line-height: 1.5;
+	border-radius: 15px;
+	margin-bottom: 25px;
+}
+.gradient:hover {
+	background: linear-gradient(0deg, rgba(75, 231, 218, 0.897) 40%, rgba(31,14,217,1) 65%);
+	color: beige;
+	text-transform: capitalize;
+}
+
+.wiki-two {
+	font-size: 25px;
+	line-height: 1.4;
+	text-align: center;
+}
+.wiki-foc:focus {
+	outline: 3px solid goldenrod;
+}
+.open-prague {
+	font-size: 25px;
+	color: darkslategrey;
+	text-transform: capitalize;
+}
+
+.prague {
+	width: 150px;
+	height: 150px;
+	background: url("../img/prague.jpg") 0 0 / 350px 350px no-repeat;
+	visibility: hidden;
+}
+.prague:target {
+	visibility: visible;
+}
+
+.ocean {
+	width: 150px;
+	height: 150px;
+	background: url("../img/osx-1920x1080-wave-blue-big-178.jpg") 50% no-repeat;
+	visibility: hidden;
+}
+.ocean:target {
+	visibility: visible;
+}
+
+.change {
+	background: url("../img/prague.jpg") 50% no-repeat;
+	width: 450px;
+	height: 450px;
+}
+.change:hover {
+	background: url("../img/coffee.jpg") center no-repeat;
+	width: 450px;
+	height: 450px;
+}
+/* ======================================== */
+.kids {
+	font-style: italic;
+	background-color: aquamarine;
+	padding: 10px;
+}
+.kids p {
+	/* за допомогою :not просто прибираємо маржин
+	у останнього параграфа */
+	/* margin-bottom: 10px; */
+	font-size: 20px;
+	line-height: 1.4;
+}
+.kids p:first-of-type {
+	color: chocolate;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.kids p:last-child {
+	background-color: coral;
+	color: bisque;
+	font-size: 27px;
+	border-radius: 5px;
+}
+.kids p:nth-child(2) {
+	background-color: darkkhaki;
+	border-radius: 5px;
+	color: firebrick;
+}
+.kids p:not(:last-child) {
+	margin-bottom: 15px;
+}
+/* ================================ */
+.colorful {
+	font-size: 30px;
+	line-height: 1.5;
+}
+.color-item {
+	text-align: center;
+}
+.color-item:nth-child(odd) {
+	color: blueviolet;
+	font-style: italic;
+}
+.color-item:nth-child(even) {
+	font-size: 25px;
+	font-weight: 600;
+	color: palegreen;
+	text-shadow: 5px 5px 6px blue;
+}
+/* Кожен через========================= */
+.plus p {
+	margin-bottom: 10px;
+	font-size: 20px;
+	border-radius: 5px;
+}
+.plus p:nth-child(4n+1) {
+	background-color: lawngreen;
+	font-size: 25px;
+}
+.plus p:nth-child(2n+2) {
+	background-color: magenta;
+	font-size: 20px;
+}
+.plus p:nth-child(4n+3) {
+	background-color: navy;
+	color: aqua;
+	font-size: 30px;
+}
+.plus p:nth-child(4n+3):hover {
+	background-color: rosybrown;
+}
+.plus p:nth-child(2n+2):hover {
+	background-color: deepskyblue;
+	color: deeppink;
+}
+.plus p:nth-child(4n+1):active {
+	background-color: black;
+	color: white;
+}
+/* ==================================== */
+
+.elements {
+	outline: 1px solid green;
+	margin-bottom: 15px;
+}
+.elements p::before {
+	content: "HELLO!";
+	color: darkorange;
+}
+.elements p::after {
+	content: "";
+	display: inline-block;
+	background-color: blueviolet;
+	width: 10px;
+	height: 10px;
+	margin-left: 10px;
+	border-radius: 25px;
+}
+.tomato {
+	font-size: 25px;
+}
+.list__t::before {
+	content: "";
+	display: inline-block;
+	background: url("../img/green_square.svg") 0 0 no-repeat;
+	width: 10px;
+	height: 10px;
+	opacity: 0.4;
+}
+.list__t:hover::before {
+	opacity: 1;
+	/* outline: 3px solid red; */
+}
+.list__t:not(:last-child) {
+	margin-bottom: 15px;
+}
+/* ================================================================= */
+/* ==============МАКЕТ 1 =================================================== */
+.main-consulting {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: #7D7D7D;
+	max-width: 712px;
+	margin: 0 auto 100px;
+	padding: 10px;
+}
+
+.consulting-top {
+	margin-bottom: 42px;
+}
+
+.consulting-title {
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.27;
+	text-transform: capitalize;
+	margin-bottom: 12px;
+}
+
+.consulting-text {
+	margin-bottom: 42px;
+	line-height: 1.46;
+	text-align: justify;
+}
+
+.consulting-subtitle {
+	color: #6B77E5;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 12px;
+}
+
+.benefits {
+	font-size: 0;
+	margin-bottom: 50px;
+}
+
+.benefits-image {
+	display: inline-block;
+	vertical-align: top;
+	min-width: 331px;
+	min-height: 262px;
+	background: url("../img/cactus.jpg") center / cover no-repeat;
+	margin-right: 29px;
+}
+.benefits-content {
+	display: inline-block;
+	max-width: 332px;
+}
+.benefits-title {
+	color: #37393F;
+	font-family: "Poppins",sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 15px;
+}
+.benefits-subtitle {
+	color: #40DDB6;
+	font-family: "Poppins",sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 21px;
+}
+.benefits-list {
+	min-height: 27px;
+	font-size: 18px;
+}
+.benefits-item {
+	opacity: 0.7;
+}
+.benefits-item:hover {
+	opacity: 1;
+}
+.benefits-item::before {
+	content: "";
+	background: url("../img/galochka.svg") center / 27px 27px no-repeat;
+	width: 27px;
+	height: 27px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+}
+
+.benefits-item:not(:last-child) {
+	margin-bottom: 30px;
+}
+/* =========================================== */
+/* ===== МАКЕТ 2 ========================== */
+
+.care {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: #7D7D7D;
+	margin: 0 auto 100px;
+	max-width: 695px;
+	padding: 10px;
+}
+.top-title {
+	color: #37393F;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+.top-title::before {
+	content: "";
+	background-color: #40DDB6;;
+	width: 12px;
+	height: 12px;
+	margin-right: 6px;
+}
+.big-title {
+	max-width: 414px;
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	margin-bottom: 20px;
+}
+.care-contant {
+	margin-bottom: 48px;
+}
+.care-text p {
+	line-height: 1.46;
+}
+.care-contant p:first-child {
+	margin-bottom: 16px;
+}
+.vision,
+.mision {
+	border: 1px solid #E3E3E3;
+	padding: 28px 41px 28px 38px;
+}
+.vision {
+	margin-bottom: 31px;
+}
+.mision {
+	margin-bottom: 48px;
+}
+.our-title {
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 12px;
+}
+.our-title::before {
+	content: "";
+	background: url("../img/galochka.svg") center / 27px 27px no-repeat;
+	width: 27px;
+	height: 27px;
+	margin-right: 19px;
+	vertical-align: middle;
+}
+.vision p,
+.mision p {
+	margin-left: 46px;
+}
+.care-button {
+	display: inline-block;
+	padding: 21px 35px;
+	background: #6B77E5;
+	color: #fff;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.2;
+}
+.care-button:hover {
+	background: #1023cceb;
+}
+/* ==================================== */
+/* ====МАКЕТ 3 ========================== */
+.work {
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	color: #7D7D7D;
+	max-width: 1240px;
+	padding: 10px;
+	margin: 0 auto 100px;
+}
+
+.top-work {
+	color: #37393F;
+	font-weight: 500;
+	margin-bottom: 16px;
+	text-align: center;
+}
+.top-work::before {
+	content: "";
+	background: url("../img/green_square.svg");
+	background: #40DDB6;
+	width: 12px;
+	height: 12px;
+	margin-right: 6px;
+}
+.big-work {
+	color: #37393F;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+	margin-bottom: 77px;
+}
+
+.all-block {
+	font-size: 0;
+}
+
+.block-work {
+	display: inline-block;
+	max-width: 386px;
+	padding: 58px 43px;
+	text-align: center;
+	background-color: #F4F4F4;
+}
+.block-work:not(:last-child) {
+	margin: 0 30px 60px 0;
+}
+.block-work>*:last-child {
+	margin-bottom: 0;
+}
+
+.block-work::before {
+	content: "";
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	margin: -95px auto 58px;
+}
+
+.one-work::before {
+	content: "";
+	background: url("../img/work_1.png") center top / 72px 72px no-repeat;
+}
+.two-work::before {
+	content: "";
+	background: url("../img/work_2.png") center top / 72px 72px no-repeat;
+}
+.three-work::before {
+	content: "";
+	background: url("../img/work_3.png") center top / 72px 72px no-repeat;
+}
+
+.title-block {
+	color: #37393F;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.27;
+	margin-bottom: 16px;
+}
+.text-work {
+	margin-bottom: 37px;
+}
+.text-work P {
+	color: #7D7D7D;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.46;
+}
+
+.link-work {
+	color: #6B77E5;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+.link-work:hover {
+	text-decoration: underline;
+	color: #40DDB6;
+}
+/* ==================================== */
+/* ===== МАКЕТ 4 ========================= */
+.jewell-all {
+	max-width: 1620px;
+	padding: 10px;
+	margin: 0 auto 100px;
+}
+.jewell {
+	font-size: 0;
+}
+.jewell-big-title {
+	display: inline-block;
+	max-width: 488px;
+	margin-right: 3px;
+	margin-top: 118px;
+	vertical-align: top;
+	color: #000;
+	font-family: "Cormorant Infant", serif;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1.15;
+}
+.jewell-big-title::after {
+	content: "";
+	width: 304px;
+	height: 3px;
+	background-color: #78473B;
+}
+
+.jewell-left {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 65px;
+	margin-top: 32px;
+}
+.jewell-img {
+	border: 1px solid #000;
+	min-width: 334px;
+	min-height: 381px;
+	margin-bottom: 34px;
+}
+.jewell-img img {
+	margin-top: 9px;
+	margin-left: 10px;
+	margin-bottom: -9px;
+	margin-right: -10px;
+}
+.left-link:hover,
+.right-link:hover {
+	opacity: 0.7;
+}
+.jewell-right {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 32px;
+}
+.jewell-subtitle {
+	color: #000;
+	font-family: "Cormorant Infant", serif;
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 1.13;
+	min-width: 339px;
+	margin-bottom: 31px;
+}
+
+.jewell-price {
+	color: #000;
+	font-family: "Cormorant Infant", serif;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.4;
+}
+.jewell-price:hover {
+	text-decoration: underline;
+	/* font-style: italic; */
+}
+/* ======================================= */
+/* ======================================= */
+.game-title {
+	text-align: center;
+	font-family: "Cormorant Infant", serif;
+	font-size: 50px;
+	font-weight: 700;
+	font-style: italic;
+	color: darkslategray;
+}
+/* ===-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */	
+
+.game {
+	max-width: 1200px;
+	min-height: 500px;
+	margin: 0 auto 50px;
+	border-radius: 25px;
+	background-color: gray;
+	font-size: 0;
+}
+.start-1 {
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	color:darkblue;
+	background-color:darkcyan;
+	border-radius: 50%;
+	font-size: 25px;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 12px;
+}
+
+.start-1:hover ~ .line-2 {
+	visibility: visible;
+}
+.line-2:hover {
+	visibility: visible;
+}
+.line-2 {
+	width: 50px;
+	height: 50px;
+	background-color: black;
+	margin: 0 auto;
+	visibility: hidden;
+}
+.line-2:hover ~ .line-3,
+.line-3:hover {
+	visibility: visible;
+}
+.line-3 {
+	width: 50px;
+	height: 200px;
+	margin: 0 auto;
+	background-color: black;
+	visibility: hidden;
+}
+.line-4 {
+	width: 600px;
+	height: 50px;
+	background-color: black;
+	visibility: hidden;
+}
+.line-3:hover ~ .line-4,
+.line-4:hover {
+	visibility: visible;
+}
+.line-5 {
+	width: 50px;
+	height: 150px;
+	background-color: black;
+	visibility: hidden;
+}
+.line-4:hover ~ .line-5,
+.line-5:hover {
+	visibility: visible;
+}
+.line-6 {
+	width: 1100px;
+	height: 30px;
+	background-color: black;
+	visibility: hidden;
+}
+.line-5:hover ~ .line-6,
+.line-6:hover {
+	visibility: visible;
+}
+.line-7 {
+	width: 50px;
+	height: 90px;
+	background-color: black;
+	margin-left: 1050px;
+	visibility: hidden;
+}
+.line-6:hover ~ .line-7,
+.line-7:hover {
+	visibility: visible;
+}
+.finish-8 {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-left: 1050px;
+	color:darkblue;
+	background-color:darkcyan;
+	border-radius: 50%;
+	font-size: 25px;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 12px;
+}
+/* --------------------------------------- */
+.click-link {
+	font-family: "Cormorant Infant", serif;
+	font-style: italic;
+	font-size: 45px;
+	font-weight: 700;
+	color:forestgreen;
+}
+.footer-link:hover {
+	color: limegreen;
+}
