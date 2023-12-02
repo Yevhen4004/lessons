@@ -1,0 +1,47 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+	background-color: lightslategrey;
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+}
+
+.title {
+	font-size: 25px;
+	font-weight: 700;
+	color:gainsboro;
+}
+.block {
+	padding: 25px 35px;
+}
+
+p img {
+	vertical-align: middle;
+}
+
+p:not(:last-child) {
+	margin-bottom: 25px;
+}
+
+.click {
+	font-size: 25px;
+	color:darkslategray;
+}
+.click:hover {
+	color: bisque;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
