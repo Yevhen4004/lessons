@@ -1,0 +1,272 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+	background-color: gainsboro;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+.header {
+	background-color:darkslategray;
+	padding: 15px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 55;
+}
+.header__container {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 10px 15px;
+}
+.menu__item {
+	display: inline-block;
+	font-size: 25px;
+	color:darkslategray;
+	position: relative;
+}
+.menu__item:not(:last-child) {
+	margin-right: 95px;
+}
+.menu__link {
+	background-color:cadetblue;
+	display: inline-block;
+	padding: 10px;
+	border-radius: 10px;
+}
+.menu__item:hover .menu__link {
+	background-color:rgb(113, 218, 222);
+}
+.menu__item:hover .one-sub-menu {
+	visibility: visible;
+}
+/* ========================= */
+.one-sub-menu {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	padding-top: 5px;
+	color: darkslateblue;
+	width: 110px;
+	visibility: hidden;
+}
+.one-sub-menu__item {
+	background-color: rgb(119, 172, 225);
+	border-radius: 10px;
+}
+.one-sub-menu__link {
+	display: inline-block;
+	padding: 10px 30px;
+	position: relative;
+}
+
+.one-sub-menu__link::before {
+	content: "";
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color:midnightblue;
+	position: absolute;
+	left: 10px;
+	top: 15px;
+}
+
+.one-sub-menu__link:hover {
+	text-decoration: underline;
+}
+/* =============================== */
+.two-sub-menu {
+	position: absolute;
+	left: 110px;
+	top: 95px;
+	padding-left: 5px;
+	color: darkslateblue;
+	width: 110px;
+	visibility: hidden;
+}
+.two-sub-menu__item {
+	background-color: rgb(119, 172, 225);
+	border-radius: 10px;
+}
+.two-sub-menu__link {
+	display: inline-block;
+	padding: 10px;
+	position: relative;
+}
+.two-sub-menu__link::after {
+	content: "";
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color:midnightblue;
+	position: absolute;
+	right: -10px;
+	top: 15px;
+}
+.two-sub-menu__link:hover {
+	text-decoration: underline;
+}
+/* ========================== */
+.one-sub-menu__item:hover .two-sub-menu {
+	visibility: visible;
+}
+
+.page {
+	padding: 95px 0;
+}
+/*! ===sticky============= */
+.practice {
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 30px;
+}
+.practice__container {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+[class*="block"] {
+	padding: 25px;
+	text-align: center;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.block-1 {
+	background-color: green;
+	color: antiquewhite;
+}
+.block-2 {
+	background-color: yellow;
+	position: sticky;
+	top: 85px;
+	left: 0;
+}
+.block-3 {
+	background-color: red;
+	color: azure;
+}
+.block-4 {
+	background-color: green;
+	position: sticky;
+	top: 95px;
+	left: 0;
+}
+.block-5 {
+	background-color: yellow;
+}
+/* !=============================== */
+
+.team__container {
+	max-width: 1250px;
+	margin: 0 auto 50px;
+	padding: 0 15px;
+}
+.team__row {
+	font-size: 0;
+}
+.team__row:not(:last-child) {
+	margin-bottom: 31px;
+}
+
+.card {
+	display: inline-block;
+	position: relative;
+}
+.card:not(:last-child) {
+	margin-right: 31px;
+}
+
+.card:hover::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(107, 119, 229, 0.70);;
+}
+.card:hover .social__item {
+	visibility: visible;
+}
+.social__item:hover {
+	opacity: 0.6;
+}
+
+.card__img img {
+	width: 100%;
+	max-width: 386px;
+	height: 532px;
+}
+.card__img {
+	min-width: 386px;
+}
+
+.card__info {
+	position: absolute;
+	top: 396px;
+	left: 22px;
+	right: 22px;
+	background-color: #fff;
+	padding: 24px 47px;	
+}
+
+.imfo__name {
+	color: #37393F;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+.info__position {
+	color: #7D7D7D;
+	text-align: center;
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	line-height: 1.35;
+}
+
+.card__social {
+	position: absolute;
+	top: 243.5px;
+	left: 107.5px;
+}
+.social__item:not(:last-child) {
+	margin-right: 13px;
+}
+.social__item {
+	display: inline-block;
+	visibility: hidden;
+}
+.social__link img {
+	width: 45px;
+	height: 45px;
+}
+/* ==================================== */
+
+.footer {
+	background-color:darkslategray;
+	color:white;
+	opacity: 0.7;
+	padding: 15px;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	right: 0;	
+	z-index: 55;
+}
+.footer__btn:hover {
+	color: aqua;
+}
+
+
+
+
+
+
+
+
