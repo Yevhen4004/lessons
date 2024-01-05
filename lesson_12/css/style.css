@@ -207,7 +207,7 @@ body {
 
 .card__info {
 	position: absolute;
-	top: 396px;
+	bottom: 22px;
 	left: 22px;
 	right: 22px;
 	background-color: #fff;
@@ -232,8 +232,8 @@ body {
 
 .card__social {
 	position: absolute;
-	top: 243.5px;
-	left: 107.5px;
+	top: 244px;
+	left: 108px;
 }
 .social__item:not(:last-child) {
 	margin-right: 13px;
