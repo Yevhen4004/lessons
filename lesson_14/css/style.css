@@ -1,0 +1,327 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
+body {
+	background-color: lightblue;
+	font-size: 20px;
+}
+[class*="__container"] {
+	max-width: 1200px;
+	margin: 0 auto 100px;
+	padding: 15px 15px;
+}
+.header__container {
+	margin-bottom: 15px;
+}
+
+.list {
+	color: firebrick;
+	font-size: 25px;
+	font-family: "Cormorant Infant", serif;
+	font-weight: 700;
+}
+
+.list__item {
+transform: translate(-100%, 0px);
+transition-duration: 0.5s;
+}
+.list__item:nth-child(1) {
+	transition-delay: 0s;
+}
+.list__item:nth-child(2) {
+	transition-delay: 0.2s;
+}
+.list__item:nth-child(3) {
+	transition-delay: 0.4s;
+}
+.list__item:nth-child(4) {
+	transition-delay: 0.6s;
+}
+.list__item:nth-child(5) {
+	transition-delay: 0.8s;
+}
+.list:hover .list__item {
+	transition-duration: 1s;
+	transform: translate(0px, 0px);
+
+}
+.list__item:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.block > *:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.block__duration {
+	width: 200px;
+	height: 200px;
+	background-color: coral;
+	border-radius: 95px 10px;
+	transition-duration: 0.3s;
+}
+.block__duration:hover {
+	background-color: yellow;
+	border-radius: 10px 95px;
+	transition-duration: 0.9s;
+}
+/* лінкам треба додавати трохи плавності */
+
+.block__property {
+	width: 200px;
+	height: 200px;
+	background-color:chartreuse;
+	transition-duration: 0.5s, 1s, 1.5s;
+	transition-property: width, background-color, height;
+}
+.block__property:hover {
+	background-color: blue;
+	width: 350px;
+	height: 150px;
+}
+
+/* працює без transition-duration */
+.block__delay {
+	width: 200px;
+	height: 200px;
+	background-color: tomato;
+	transition-duration: 0.5s, 0.8s, 1.2s;
+	transition-delay: 0s, 0.5s, 1.3s;
+	transition-property: widtht, border-radius, background-color;
+}
+.block__delay:hover {
+	width: 150px;
+	/* height: 500px; */
+	border-radius: 10px 50px;
+	background-color: turquoise;
+}
+.block__timing-function {
+	width: 200px;
+	height: 200px;
+	border-radius: 15px 45px;
+	background-color: yellow;
+	transition-duration: 0.5s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.block__timing-function:hover {
+	width: 450px;
+	background-color: violet;
+	border-radius: 45px 15px;
+	/* transition-timing-function: linear; */
+}
+/* =========================================== */
+.block__amimation {
+	width: 200px;
+	height: 200px;
+	background-color: teal;
+	color: springgreen;
+	text-align: center;
+	padding-top: 90px;
+}
+/* ключові кадри */
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.block__amimation {
+	animation-name: rotate;
+	animation-duration: 2s;
+	animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	/* animation-iteration-count: infinite; */
+	animation-iteration-count: 6;
+	animation-direction: alternate;
+	animation-delay: 1s;
+}
+.block__amimation:hover {
+	animation-play-state: paused;
+}
+/* ---------------------------------- */
+.block__runner {
+	width: 25px;
+	height: 25px;
+	background-color: red;
+	border-radius: 50%;
+	position: relative;
+	animation-name: run;
+	animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+	/* універсальний запис 
+	animation: run 0.5s linear infinite alternate;
+	*/
+}
+.block__runner:hover {
+	animation-play-state: paused;
+	background-color:darkmagenta
+}
+@keyframes run {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 100%;
+	}
+}
+/* =========CAR========================= */
+
+.car__body {
+	width: 700px;
+	height: 200px;
+	background-color: chartreuse;
+	border: 3px solid black;
+	border-radius: 89% 15% 100% 2% / 85% 100% 0% 15%;
+	position: relative;
+	animation-name: movement;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-direction: reverse;
+}
+.car__wheel-front,
+.car__wheel-back {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: blue;
+	position: absolute;
+	border: 30px dashed black;
+	animation-name: rotate;
+	animation-duration: 0.8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction:reverse;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes movement {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
+.car__wheel-front {
+	bottom: -70px;
+	left: 45px;
+}
+.car__wheel-back {
+	right: 55px;
+	bottom: -70px;
+}
+
+.car__door-front,
+.car__door-back {
+	width: 3px;
+	background-color: black;
+	position: absolute;
+}
+.car__door-front {
+	top: 34px;
+	left: 220px;
+	height: 162px;
+}
+.car__door-back {
+	right: 230px;
+	top: 3px;
+	height: 192px;	
+}
+.car__look {
+	position: absolute;
+	width: 35px;
+	height: 15px;
+	background-color: blue;
+	top: 35px;
+	left: 400px;
+	border-radius: 5px;
+}
+.car__light-front {
+	position: absolute;
+	width: 25px;
+	height: 45px;
+	background-color: red;
+	transform: rotate(55deg);
+	top: 75px;
+	left: 40px;
+	border-radius: 15px 25px 25px 15px;
+}
+.car__light-back {
+	position: absolute;
+	width: 20px;
+	height: 70px;
+	background-color: red;
+	right: 20px;
+	top: 15px;
+	transform: rotate(-30deg);
+	border-radius: 5px 25px 25px 5px;
+}
+.car__window {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 3px solid transparent;
+	border-bottom: 80px solid black;
+	bottom: 155px;
+	left: 219px;
+	transform: rotate(15deg);
+	border-radius: 10px;
+}
+.car__turn-front,
+.car__turn-back {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: orange;
+	border-radius: 50%;
+
+}
+.car__turn-front {
+	bottom: 3px;
+	left: 7px;
+}
+.car__turn-back {
+	bottom: 3px;
+	right: 7px;
+}
+
+.car__turn-front:hover,
+.car__turn-back:hover {
+	transform: scale(1.5, 1.5);
+	background-color:red;
+}
+/* ============================================= */
+
+.header__title,
+.footer__link {
+	font-size: 35px;
+	color:crimson;
+	padding: 25px;
+	font-family: "Cormorant Infant", serif;
+	font-style: italic;
+}
+.footer__link {
+	transition: color 0.3s;
+}
+.footer__link:hover {
+	color:rgba(4, 62, 33, 0.849);
+}
+
